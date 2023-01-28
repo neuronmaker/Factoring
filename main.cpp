@@ -1,11 +1,10 @@
 /* 
  * File:   main.cpp
- * Author: dalton
+ * Author: Dalton
  *
  * Created on November 6, 2016, 12:58 PM
  */
 #define VERSION "1.05"
-#include <cstdlib>
 #include <iostream>
 #include <string>
 #include <stdint.h>
@@ -30,7 +29,7 @@ int main(int argc, char** argv) {
             
         }else{
             int lgth=ram.length();
-            for (int j = 0; j < lgth; j++) {
+            for (int j = 0; j < lgth; j++) {//a very jenky way to convert a string into an integer, I coded this at 4AM
                 num = num * 10;
                 switch (ram[j]) {
                     case '1':
